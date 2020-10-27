@@ -1,0 +1,19 @@
+{
+	"TableName" : "User_pass_table",
+	"KeySchema" : [
+		{
+			"KeyType" : "HASH",
+			"AttributeName" : "user_id"
+		}
+	],
+	"AttributeDefinitions" : [
+		{	
+			"AttributeName" : "user_id",
+			"AttributeType" : "S"
+		}
+	],
+	"ProvisionedThroughput":{
+		"WriteCapacityUnits" : 3,
+		"ReadCapacityUnits" : 3
+	}
+}

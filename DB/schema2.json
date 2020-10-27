@@ -1,0 +1,19 @@
+{
+	"TableName" : "Session_table",
+	"KeySchema" : [
+		{
+			"KeyType" : "HASH",
+			"AttributeName" : "session_id"
+		}
+	],
+	"AttributeDefinitions" : [
+		{	
+			"AttributeName" : "session_id",
+			"AttributeType" : "S"
+		}
+	],
+	"ProvisionedThroughput":{
+		"WriteCapacityUnits" : 3,
+		"ReadCapacityUnits" : 3
+	}
+}
